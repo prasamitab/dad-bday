@@ -1,4 +1,3 @@
-// Preloader removal
 window.addEventListener('load', () => {
   const preloader = document.getElementById('preloader');
   preloader.style.opacity = '0';
@@ -8,7 +7,6 @@ window.addEventListener('load', () => {
   }, 1000);
 });
 
-// Section navigation
 document.querySelectorAll('.nav-btn').forEach(button => {
   button.addEventListener('click', () => {
     const targetId = button.getAttribute('data-target');
@@ -17,7 +15,6 @@ document.querySelectorAll('.nav-btn').forEach(button => {
   });
 });
 
-// Music play/pause toggle
 const playBtn = document.getElementById('play-music');
 const bgMusic = document.getElementById('bg-music');
 if (playBtn && bgMusic) {
