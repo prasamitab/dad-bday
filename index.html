@@ -2,59 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Happy Birthday Mintu!</title>
+  <title>MintuVerse: Happy Birthday, Scientist Dad!</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="hero">
-    <h1>🚀 Happy Birthday, Mintu!</h1>
-    <p>Transmission received from Hyderabad lab…</p>
-  </header>
+  <!-- Background Music Controls -->
+  <div class="music-player">
+    <audio id="bg-music" src="audio/rabindra_song.mp3" loop></audio>
+    <button id="play-music">🎵 Play Rabindra Sangeet</button>
+  </div>
 
-  <section class="message">
-    <h2>💌 From your proudest invention</h2>
-    <p>
-      Even across cities, you're always in my orbit.  
-      Your love is like gravity—constant, invisible, and holding everything together.
-    </p>
-  </section>
+  <!-- Sections -->
+  <div class="section active" id="section-1">
+    <h1>🚀 Welcome to MintuVerse!</h1>
+    <p>The Grand Unified Theory of Love, Music & Science is about to begin...</p>
+    <button class="nav-btn" data-target="section-2">Next ➡️</button>
+  </div>
 
-  <section class="scientist-profile">
-    <h2>🔬 Scientist Profile: Mintu</h2>
+  <div class="section" id="section-2">
+    <h2>🔬 Scientist Profile: Dr. Mintu</h2>
     <ul>
-      <li>Specialization: Unmatched Dad Jokes</li>
-      <li>Known For: Infinite Patience, Tea Making Skills</li>
-      <li>Ongoing Experiment: Being the Best Dad Ever</li>
+      <li>Specialized in Dad Jokes & Patience Dynamics</li>
+      <li>Co-author of Kitchen Lab Experiments</li>
+      <li>Principal Investigator in Daughter’s Happiness Project</li>
     </ul>
-  </section>
+    <blockquote>"If at first you don’t succeed, call it version 1.0!"</blockquote>
+    <div class="nav">
+      <button class="nav-btn" data-target="section-1">⬅️ Back</button>
+      <button class="nav-btn" data-target="section-3">Next ➡️</button>
+    </div>
+  </div>
 
-  <section class="gallery">
+  <div class="section" id="section-3">
     <h2>🧫 Memory Gallery</h2>
     <div class="photo-grid">
       <img src="images/photo1.png" alt="Memory 1">
       <img src="images/photo2.png" alt="Memory 2">
       <img src="images/photo3.png" alt="Memory 3">
     </div>
-  </section>
+    <blockquote>"Time flies faster than light... unless you're napping!"</blockquote>
+    <div class="nav">
+      <button class="nav-btn" data-target="section-2">⬅️ Back</button>
+      <button class="nav-btn" data-target="section-4">Next ➡️</button>
+    </div>
+  </div>
 
-  <section class="video">
-    <h2>🎥 Special Transmission</h2>
-    <video width="640" controls>
+  <div class="section" id="section-4">
+    <h2>🎥 Special Message</h2>
+    <video controls>
       <source src="videos/birthday_message.mp4" type="video/mp4">
-      Your browser does not support the video tag.
     </video>
-  </section>
+    <blockquote>"Love is the strongest force in the universe—and physical too!"</blockquote>
+    <div class="nav">
+      <button class="nav-btn" data-target="section-3">⬅️ Back</button>
+      <button class="nav-btn" data-target="section-5">Next ➡️</button>
+    </div>
+  </div>
 
-  <section class="equation">
+  <div class="section" id="section-5">
     <h2>📐 Equation of Love</h2>
-    <p>L = ∫(Papa × Time) dt from t=0 to ∞</p>
-  </section>
+    <p><code>L = ∫(Mintu × Time) dt from t = 0 to ∞</code></p>
+    <blockquote>"In Mintu we trust."</blockquote>
+    <div class="nav">
+      <button class="nav-btn" data-target="section-4">⬅️ Back</button>
+      <button class="nav-btn" data-target="section-6">Next ➡️</button>
+    </div>
+  </div>
 
-  <section class="footer">
-    <p>👨‍🔬 Awarded: Nobel Prize for Lifetime Achievement in Being the Coolest Dad</p>
-    <p>Made with ❤️ by your daughter, Prasamita</p>
-  </section>
+  <div class="section" id="section-6">
+    <h2>🎁 Final Surprise</h2>
+    <p>👨‍🔬 Awarded: Nobel Prize for Most Epic Dad Ever</p>
+    <p>Made with ❤️ in Hyderabad by your proudest invention — Prasamita</p>
+    <button class="nav-btn" data-target="section-5">⬅️ Back</button>
+  </div>
 
+  <script src="script.js"></script>
 </body>
 </html>
