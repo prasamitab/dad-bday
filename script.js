@@ -7,26 +7,27 @@ window.addEventListener('load', () => {
     preloader.style.display = 'none';
   }, 1000);
 });
-// Section navigation logic
-document.querySelectorAll('.nav-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    document.querySelector('.section.active').classList.remove('active');
-    document.getElementById(btn.dataset.target).classList.add('active');
+
+// Section navigation
+document.querySelectorAll('.nav-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    const targetId = button.getAttribute('data-target');
+    document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active'));
+    document.getElementById(targetId).classList.add('active');
   });
 });
 
-// Background music toggle
+// Music play/pause toggle
+const playBtn = document.getElementById('play-music');
 const bgMusic = document.getElementById('bg-music');
-const musicBtn = document.getElementById('play-music');
-
-musicBtn.addEventListener('click', () => {
-  if (bgMusic.paused) {
-    bgMusic.play();
-    musicBtn.classList.add('playing');
-    musicBtn.textContent = '🔇 Pause Rabindra Sangeet';
-  } else {
-    bgMusic.pause();
-    musicBtn.classList.remove('playing');
-    musicBtn.textContent = '🎵 Play Rabindra Sangeet';
-  }
-});
+if (playBtn && bgMusic) {
+  playBtn.addEventListener('click', () => {
+    if (bgMusic.paused) {
+      bgMusic.play();
+      playBtn.textContent = '⏸️ Pause Music';
+    } else {
+      bgMusic.pause();
+      playBtn.textContent = '🎵 Play Rabindra Sangeet';
+    }
+  });
+}
