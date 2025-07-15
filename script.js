@@ -1,3 +1,12 @@
+// Preloader removal
+window.addEventListener('load', () => {
+  const preloader = document.getElementById('preloader');
+  preloader.style.opacity = '0';
+  preloader.style.transition = 'opacity 1s ease';
+  setTimeout(() => {
+    preloader.style.display = 'none';
+  }, 1000);
+});
 // Section navigation logic
 document.querySelectorAll('.nav-btn').forEach(btn => {
   btn.addEventListener('click', () => {
