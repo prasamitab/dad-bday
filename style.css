@@ -1,23 +1,33 @@
 body {
-  font-family: 'Courier New', monospace;
-  background: #0d0d0d;
-  color: #00ffcc;
-  padding: 20px;
-  line-height: 1.6;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #eee;
+  overflow-x: hidden;
 }
 
-.hero, .message, .scientist-profile, .gallery, .video, .equation, .footer {
-  margin-bottom: 40px;
-  border: 1px solid #00ffcc;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: #1a1a1a;
-  box-shadow: 0 0 10px #00ffcc50;
+.section {
+  display: none;
+  padding: 50px;
+  animation: fadeIn 0.6s ease-in-out;
 }
 
-h1, h2 {
-  color: #00ffe1;
-  text-shadow: 0 0 5px #00ffcc;
+.section.active {
+  display: block;
+}
+
+.nav-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #005577;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.nav-btn:hover {
+  background: #007799;
 }
 
 .photo-grid {
@@ -27,19 +37,38 @@ h1, h2 {
 }
 
 .photo-grid img {
-  width: 200px;
-  border-radius: 8px;
+  width: 150px;
   border: 2px solid #00ffcc;
-  transition: transform 0.3s ease;
+  border-radius: 5px;
 }
 
-.photo-grid img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 10px #00ffcc;
+blockquote {
+  margin-top: 20px;
+  padding-left: 20px;
+  border-left: 4px solid #00ffcc;
 }
 
-video {
-  max-width: 100%;
-  border: 2px solid #00ffcc;
-  border-radius: 8px;
+.music-player {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+#play-music {
+  padding: 8px 12px;
+  background: #222;
+  color: #fff;
+  border: 1px solid #555;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#play-music.playing {
+  background: #00ffcc;
+  border-color: #00ffcc;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
 }
