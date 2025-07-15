@@ -1,27 +1,27 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
   background: black;
-  color: #fff;
-  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  overflow-x: hidden;
 }
 
 .section {
   display: none;
-  padding: 40px;
+  padding: 50px;
+  animation: fade 1s ease;
 }
 .section.active {
   display: block;
 }
 
 button.nav-btn {
-  margin-top: 20px;
-  padding: 10px 20px;
   background: #00ffcc;
   border: none;
-  color: black;
+  padding: 10px 20px;
+  margin-top: 20px;
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
 }
 
@@ -31,31 +31,25 @@ button.nav-btn {
   right: 10px;
 }
 
-/* Preloader Styles */
 #preloader {
   position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
   background: #000;
-  color: white;
-  z-index: 9999;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  z-index: 9999;
 }
 
 .atom {
+  width: 80px; height: 80px;
   position: relative;
-  width: 80px;
-  height: 80px;
 }
 .electron {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 100%; height: 100%;
   border: 2px solid #00ffcc;
   border-radius: 50%;
   animation: spin 2s linear infinite;
@@ -65,41 +59,40 @@ button.nav-btn {
 .e3 { transform: rotate(45deg); }
 
 .loading-text {
-  margin-top: 20px;
   color: #00ffcc;
-  font-family: monospace;
+  margin-top: 15px;
 }
 
-@keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.photo-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.photo-grid img {
+  width: 150px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.photo-grid img:hover {
+  transform: scale(1.1);
 }
 
-/* Guitar Vibes */
-.quote {
-  font-style: italic;
-  margin-top: 20px;
-  color: #00ffcc;
-}
-
-/* Lab Results */
 .lab-report {
   background: #111;
   padding: 20px;
   font-family: monospace;
   border-left: 5px solid #00ffcc;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .bubbling-tubes {
   display: flex;
-  gap: 20px;
   justify-content: center;
+  gap: 20px;
 }
 .tube {
-  width: 20px;
-  height: 80px;
+  width: 20px; height: 80px;
   background: linear-gradient(to top, #00ffcc 30%, transparent 70%);
-  animation: bubble 1s infinite alternate ease-in-out;
+  animation: bubble 1s infinite alternate;
   border-radius: 5px;
 }
 .tube:nth-child(2) { animation-delay: 0.3s; }
@@ -107,10 +100,9 @@ button.nav-btn {
 
 @keyframes bubble {
   from { transform: scaleY(1); }
-  to { transform: scaleY(1.4); }
+  to { transform: scaleY(1.5); }
 }
 
-/* Space-Time Memories */
 .space-bg {
   background: radial-gradient(circle, #111 30%, #000 100%);
   padding: 30px;
@@ -119,20 +111,45 @@ button.nav-btn {
   opacity: 0;
   animation: fadeInUp 3s forwards;
 }
-.fade-text[style*="--i: 1"] { animation-delay: 0s; }
-.fade-text[style*="--i: 2"] { animation-delay: 1s; }
-.fade-text[style*="--i: 3"] { animation-delay: 2s; }
+.fade-text[style*="--i:1"] { animation-delay: 0s; }
+.fade-text[style*="--i:2"] { animation-delay: 1s; }
 
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
-}
 .rocket {
-  margin-top: 30px;
+  margin-top: 20px;
   font-size: 1.5rem;
   animation: float 2s infinite ease-in-out;
 }
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.quote {
+  font-style: italic;
+  margin-top: 20px;
+  color: #00ffcc;
+}
+
+.stars {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url('https://raw.githubusercontent.com/prajwalkandekar/animated-night-sky/master/stars.png') repeat;
+  z-index: -1;
+  animation: moveStars 200s linear infinite;
+}
+
+@keyframes moveStars {
+  from { background-position: 0 0; }
+  to { background-position: 10000px 5000px; }
 }
