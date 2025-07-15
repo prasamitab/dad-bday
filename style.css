@@ -1,0 +1,45 @@
+body {
+  font-family: 'Courier New', monospace;
+  background: #0d0d0d;
+  color: #00ffcc;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.hero, .message, .scientist-profile, .gallery, .video, .equation, .footer {
+  margin-bottom: 40px;
+  border: 1px solid #00ffcc;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #1a1a1a;
+  box-shadow: 0 0 10px #00ffcc50;
+}
+
+h1, h2 {
+  color: #00ffe1;
+  text-shadow: 0 0 5px #00ffcc;
+}
+
+.photo-grid {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.photo-grid img {
+  width: 200px;
+  border-radius: 8px;
+  border: 2px solid #00ffcc;
+  transition: transform 0.3s ease;
+}
+
+.photo-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #00ffcc;
+}
+
+video {
+  max-width: 100%;
+  border: 2px solid #00ffcc;
+  border-radius: 8px;
+}
