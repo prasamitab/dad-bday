@@ -2,138 +2,126 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>MintuVerse: Happy Birthday, Scientist Dad!</title>
+  <title>MintuVerse: Happy Birthday!</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Preloader -->
-  <div id="preloader">
-    <div class="atom">
-      <div class="electron e1"></div>
-      <div class="electron e2"></div>
-      <div class="electron e3"></div>
-    </div>
-    <p class="loading-text">Loading MintuVerse...</p>
+<div id="preloader">
+  <div class="atom">
+    <div class="electron e1"></div>
+    <div class="electron e2"></div>
+    <div class="electron e3"></div>
   </div>
+  <p class="loading-text">Loading MintuVerse...</p>
+</div>
 
-  <!-- Music Player -->
-  <div class="music-player">
-    <audio id="bg-music" src="audio/rabindra_sangeet.mp3" loop></audio>
-    <button id="play-music">🎵 Play Rabindra Sangeet</button>
+<div class="stars"></div>
+
+<div class="music-player">
+  <audio id="bg-music" src="audio/rabindra_sangeet.mp3" loop></audio>
+  <button id="play-music">🎵 Play Rabindra Sangeet</button>
+</div>
+
+<div class="section active" id="section-1">
+  <h1>🚀 Welcome to MintuVerse!</h1>
+  <p>The Grand Unified Theory of Love, Music & Science is about to begin...</p>
+  <button class="nav-btn" data-target="section-2">Next ➡️</button>
+</div>
+
+<div class="section" id="section-2">
+  <h2>🔬 Scientist Profile: Dr. Mintu</h2>
+  <ul>
+    <li>Specialized in Dad Jokes & Patience Dynamics</li>
+    <li>Principal Investigator in Daughter’s Happiness Project</li>
+  </ul>
+  <div class="nav">
+    <button class="nav-btn" data-target="section-1">⬅️ Back</button>
+    <button class="nav-btn" data-target="section-3">Next ➡️</button>
   </div>
+</div>
 
-  <!-- Sections -->
-  <div class="section active" id="section-1">
-    <h1>🚀 Welcome to MintuVerse!</h1>
-    <p>The Grand Unified Theory of Love, Music & Science is about to begin...</p>
-    <button class="nav-btn" data-target="section-2">Next ➡️</button>
+<div class="section" id="section-3">
+  <h2>🧫 Memory Gallery</h2>
+  <div class="photo-grid">
+    <img src="images/photo1.png">
+    <img src="images/photo2.png">
+    <img src="images/photo3.png">
   </div>
-
-  <div class="section" id="section-2">
-    <h2>🔬 Scientist Profile: Dr. Mintu</h2>
-    <ul>
-      <li>Specialized in Dad Jokes & Patience Dynamics</li>
-      <li>Co-author of Kitchen Lab Experiments</li>
-      <li>Principal Investigator in Daughter’s Happiness Project</li>
-    </ul>
-    <blockquote>"If at first you don’t succeed, call it version 1.0!"</blockquote>
-    <div class="nav">
-      <button class="nav-btn" data-target="section-1">⬅️ Back</button>
-      <button class="nav-btn" data-target="section-3">Next ➡️</button>
-    </div>
+  <div class="nav">
+    <button class="nav-btn" data-target="section-2">⬅️ Back</button>
+    <button class="nav-btn" data-target="section-4">Next ➡️</button>
   </div>
+</div>
 
-  <div class="section" id="section-3">
-    <h2>🧫 Memory Gallery</h2>
-    <div class="photo-grid">
-      <img src="images/photo1.png" alt="Memory 1">
-      <img src="images/photo2.png" alt="Memory 2">
-      <img src="images/photo3.png" alt="Memory 3">
-    </div>
-    <blockquote>"Time flies faster than light... unless you're napping!"</blockquote>
-    <div class="nav">
-      <button class="nav-btn" data-target="section-2">⬅️ Back</button>
-      <button class="nav-btn" data-target="section-4">Next ➡️</button>
-    </div>
+<div class="section" id="section-4">
+  <h2>🎥 Special Message</h2>
+  <video controls>
+    <source src="videos/birthday_message.mp4" type="video/mp4">
+  </video>
+  <div class="nav">
+    <button class="nav-btn" data-target="section-3">⬅️ Back</button>
+    <button class="nav-btn" data-target="section-5">Next ➡️</button>
   </div>
+</div>
 
-  <div class="section" id="section-4">
-    <h2>🎥 Special Message</h2>
-    <video controls>
-      <source src="videos/birthday_message.mp4" type="video/mp4">
-    </video>
-    <div class="nav">
-      <button class="nav-btn" data-target="section-3">⬅️ Back</button>
-      <button class="nav-btn" data-target="section-5">Next ➡️</button>
-    </div>
+<div class="section" id="section-5">
+  <h2>📐 Equation of Love</h2>
+  <p><code>L = ∫(Mintu × Time) dt from t = 0 to ∞</code></p>
+  <div class="nav">
+    <button class="nav-btn" data-target="section-4">⬅️ Back</button>
+    <button class="nav-btn" data-target="section-6">Next ➡️</button>
   </div>
+</div>
 
-  <div class="section" id="section-5">
-    <h2>📐 Equation of Love</h2>
-    <p><code>L = ∫(Mintu × Time) dt from t = 0 to ∞</code></p>
-    <div class="nav">
-      <button class="nav-btn" data-target="section-4">⬅️ Back</button>
-      <button class="nav-btn" data-target="section-6">Next ➡️</button>
-    </div>
+<div class="section" id="section-6">
+  <h2>🎁 Final Surprise</h2>
+  <p>👨‍🔬 Awarded: Nobel Prize for Most Epic Dad Ever</p>
+  <p style="font-style: italic; color: #00ffcc;">— Built lovingly by your invention, <strong>Prasamita</strong></p>
+  <div class="nav">
+    <button class="nav-btn" data-target="section-5">⬅️ Back</button>
+    <button class="nav-btn" data-target="section-7">Next ➡️</button>
   </div>
+</div>
 
-  <div class="section" id="section-6">
-    <h2>🎁 Final Surprise</h2>
-    <p>👨‍🔬 Awarded: Nobel Prize for Most Epic Dad Ever</p>
-    <p>Made with ❤️ in Hyderabad by your proudest invention — <strong>Prasamita</strong></p>
-    <p style="font-style: italic; color: #00ffcc;">— Built lovingly by your invention, Prasaita</p>
-    <div class="nav">
-      <button class="nav-btn" data-target="section-5">⬅️ Back</button>
-      <button class="nav-btn" data-target="section-7">Next ➡️</button>
-    </div>
+<div class="section" id="section-7">
+  <h2>🎸 Guitar Vibes</h2>
+  <p class="quote">“Tumi robe nirobe…”</p>
+  <div class="nav">
+    <button class="nav-btn" data-target="section-6">⬅️ Back</button>
+    <button class="nav-btn" data-target="section-8">Next ➡️</button>
   </div>
+</div>
 
-  <!-- Section 7: Guitar Vibes -->
-  <div class="section" id="section-7">
-    <h2>🎸 Guitar Vibes</h2>
-    <p>Strings of emotion tuned to Dad’s rhythm.</p>
-    <p class="quote">“Tumi robe nirobe…”</p>
-    <div class="nav">
-      <button class="nav-btn" data-target="section-6">⬅️ Back</button>
-      <button class="nav-btn" data-target="section-8">Next ➡️</button>
-    </div>
+<div class="section" id="section-8">
+  <h2>🧪 Mintu’s Lab Results</h2>
+  <div class="lab-report">
+    <p><strong>Research Area:</strong> Physics + Fatherhood</p>
+    <p><strong>Published:</strong> “Theory of Infinite Patience”</p>
   </div>
-
-  <!-- Section 8: Mintu’s Lab Results -->
-  <div class="section" id="section-8">
-    <h2>🧪 Mintu’s Lab Results</h2>
-    <div class="lab-report">
-      <p><strong>Subject:</strong> Dr. Mintu</p>
-      <p><strong>Research Area:</strong> Physics + Fatherhood</p>
-      <p><strong>Published Papers:</strong> “Theory of Infinite Patience”</p>
-      <p><strong>Conclusion:</strong> 100% Awesomeness Confirmed</p>
-    </div>
-    <div class="bubbling-tubes">
-      <div class="tube"></div>
-      <div class="tube"></div>
-      <div class="tube"></div>
-    </div>
-    <div class="nav">
-      <button class="nav-btn" data-target="section-7">⬅️ Back</button>
-      <button class="nav-btn" data-target="section-9">Next ➡️</button>
-    </div>
+  <div class="bubbling-tubes">
+    <div class="tube"></div>
+    <div class="tube"></div>
+    <div class="tube"></div>
   </div>
-
-  <!-- Section 9: Space-Time Memories -->
-  <div class="section" id="section-9">
-    <h2>🌌 Space-Time Memories</h2>
-    <div class="space-bg">
-      <p class="fade-text" style="--i: 1;">“No telescope needed to see how far your love reaches.”</p>
-      <p class="fade-text" style="--i: 2;">“Time warps when I think of all our memories.”</p>
-      <p class="fade-text" style="--i: 3;">“Happy Birthday from Hyderabad to Kolkata across light years!”</p>
-      <div class="rocket">🚀 Mintu-1</div>
-    </div>
-    <div class="nav">
-      <button class="nav-btn" data-target="section-8">⬅️ Back</button>
-    </div>
+  <div class="nav">
+    <button class="nav-btn" data-target="section-7">⬅️ Back</button>
+    <button class="nav-btn" data-target="section-9">Next ➡️</button>
   </div>
+</div>
 
-  <script src="script.js"></script>
+<div class="section" id="section-9">
+  <h2>🌌 Space-Time Memories</h2>
+  <div class="space-bg">
+    <p class="fade-text" style="--i:1;">“Your love defies physics.”</p>
+    <p class="fade-text" style="--i:2;">“Happy Birthday from light years away!”</p>
+    <div class="rocket">🚀 Mintu-1</div>
+  </div>
+  <div class="nav">
+    <button class="nav-btn" data-target="section-8">⬅️ Back</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
