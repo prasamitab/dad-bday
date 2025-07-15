@@ -7,7 +7,7 @@
 </head>
 <body>
 
-  <!-- ⚛️ Atom-Themed Preloader -->
+  <!-- Preloader -->
   <div id="preloader">
     <div class="atom">
       <div class="electron e1"></div>
@@ -17,13 +17,13 @@
     <p class="loading-text">Loading MintuVerse...</p>
   </div>
 
-  <!-- 🎵 Music Player -->
+  <!-- Music Player -->
   <div class="music-player">
     <audio id="bg-music" src="audio/rabindra_sangeet.mp3" loop></audio>
     <button id="play-music">🎵 Play Rabindra Sangeet</button>
   </div>
 
-  <!-- 💫 Sections -->
+  <!-- Sections -->
   <div class="section active" id="section-1">
     <h1>🚀 Welcome to MintuVerse!</h1>
     <p>The Grand Unified Theory of Love, Music & Science is about to begin...</p>
@@ -63,7 +63,6 @@
     <video controls>
       <source src="videos/birthday_message.mp4" type="video/mp4">
     </video>
-    <blockquote>"Love is the strongest force in the universe—and physical too!"</blockquote>
     <div class="nav">
       <button class="nav-btn" data-target="section-3">⬅️ Back</button>
       <button class="nav-btn" data-target="section-5">Next ➡️</button>
@@ -73,7 +72,6 @@
   <div class="section" id="section-5">
     <h2>📐 Equation of Love</h2>
     <p><code>L = ∫(Mintu × Time) dt from t = 0 to ∞</code></p>
-    <blockquote>"In Mintu we trust."</blockquote>
     <div class="nav">
       <button class="nav-btn" data-target="section-4">⬅️ Back</button>
       <button class="nav-btn" data-target="section-6">Next ➡️</button>
@@ -83,8 +81,57 @@
   <div class="section" id="section-6">
     <h2>🎁 Final Surprise</h2>
     <p>👨‍🔬 Awarded: Nobel Prize for Most Epic Dad Ever</p>
-    <p>Made with ❤️ in Hyderabad by your proudest invention — Prasamita</p>
-    <button class="nav-btn" data-target="section-5">⬅️ Back</button>
+    <p>Made with ❤️ in Hyderabad by your proudest invention — <strong>Prasamita</strong></p>
+    <p style="font-style: italic; color: #00ffcc;">— Built lovingly by your invention, Prasaita</p>
+    <div class="nav">
+      <button class="nav-btn" data-target="section-5">⬅️ Back</button>
+      <button class="nav-btn" data-target="section-7">Next ➡️</button>
+    </div>
+  </div>
+
+  <!-- Section 7: Guitar Vibes -->
+  <div class="section" id="section-7">
+    <h2>🎸 Guitar Vibes</h2>
+    <p>Strings of emotion tuned to Dad’s rhythm.</p>
+    <p class="quote">“Tumi robe nirobe…”</p>
+    <div class="nav">
+      <button class="nav-btn" data-target="section-6">⬅️ Back</button>
+      <button class="nav-btn" data-target="section-8">Next ➡️</button>
+    </div>
+  </div>
+
+  <!-- Section 8: Mintu’s Lab Results -->
+  <div class="section" id="section-8">
+    <h2>🧪 Mintu’s Lab Results</h2>
+    <div class="lab-report">
+      <p><strong>Subject:</strong> Dr. Mintu</p>
+      <p><strong>Research Area:</strong> Physics + Fatherhood</p>
+      <p><strong>Published Papers:</strong> “Theory of Infinite Patience”</p>
+      <p><strong>Conclusion:</strong> 100% Awesomeness Confirmed</p>
+    </div>
+    <div class="bubbling-tubes">
+      <div class="tube"></div>
+      <div class="tube"></div>
+      <div class="tube"></div>
+    </div>
+    <div class="nav">
+      <button class="nav-btn" data-target="section-7">⬅️ Back</button>
+      <button class="nav-btn" data-target="section-9">Next ➡️</button>
+    </div>
+  </div>
+
+  <!-- Section 9: Space-Time Memories -->
+  <div class="section" id="section-9">
+    <h2>🌌 Space-Time Memories</h2>
+    <div class="space-bg">
+      <p class="fade-text" style="--i: 1;">“No telescope needed to see how far your love reaches.”</p>
+      <p class="fade-text" style="--i: 2;">“Time warps when I think of all our memories.”</p>
+      <p class="fade-text" style="--i: 3;">“Happy Birthday from Hyderabad to Kolkata across light years!”</p>
+      <div class="rocket">🚀 Mintu-1</div>
+    </div>
+    <div class="nav">
+      <button class="nav-btn" data-target="section-8">⬅️ Back</button>
+    </div>
   </div>
 
   <script src="script.js"></script>
